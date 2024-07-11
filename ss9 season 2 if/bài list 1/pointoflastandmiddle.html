@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>xếp hạng học lực</title>
+</head>
+<body>
+<script>
+    let middlescore = prompt('điểm giữa kì của bạn')
+    let lastscore = prompt('điểm cuối kì của bạn')
+    let a = parseFloat(middlescore)
+    let b = parseFloat(lastscore)
+    var average = (a+2*b)/3
+    var classification;
+    if (average >= 8) {
+        classification = 'Giỏi';
+    } else if (average >= 6.5) {
+        classification = 'Khá';
+    } else if (average >= 5) {
+        classification = 'Trung Bình';
+    } else if (average >= 3.5) {
+        classification = 'Yếu';
+    } else {
+        classification = 'Kém';
+    }
+    alert('học lực của bạn là' +classification)
+</script>
+</body>
+</html>
+</script>
+</body>
+</html>
