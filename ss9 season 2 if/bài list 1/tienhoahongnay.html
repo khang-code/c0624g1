@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tiền hoa hồng</title>
+</head>
+<body>
+<script>
+    let tienhoahong = prompt('số tiền bán được(tính bằng $)')
+    let a = parseInt(tienhoahong)
+    if (a > 1000000) {
+        alert('bạn đã nhập quá số tiền' )
+    } else if (100000 < a && a < 1000000) {
+        a = a * 10 / 100;
+        alert('số tiền bạn nhận được là:' + a)
+    } else if (50000 < a && a < 100000) {
+        a = a * 7 / 100;
+        alert('số tiền bạn nhận được là:' + a)
+    } else if (10000 < a && a < 50000) {
+        a = a * 6 / 100;
+        alert('số tiền bạn nhận được là:' + a)
+    } else if (1000 < a && a < 10000) {
+        a = a * 5 / 100;
+        alert('số tiền bạn nhận được là:' + a)
+    } else if (0 < a && a < 1000) {
+        a = a * 4 / 100;
+        alert('số tiền bạn nhận được là:' + a)
+    }
+</script>
+</body>
+</html>
