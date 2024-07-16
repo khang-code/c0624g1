@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<!--suppress BadExpressionStatementJS, JSVoidFunctionReturnValueUsed -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>count</title>
+<body>
+<script>
+    let i;
+    let content=''
+    for (i=1;i<=100;i++) {
+        content += i + "<br>"
+    }
+
+    if (content%3==0 && content%5==0) {document.writeln('FizzBuzz')} else
+    if (content%3==0)  {document.writeln('Fizz') } else if (content%5==0) {document.writeln('Buzz')} else {
+    document.writeln(content)}
+</script>
+</body>
