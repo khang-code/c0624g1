@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>nối dấu giữa các số</title>
+</head>
+<body>
+<script>
+    let result = 0
+    let mynumber =[0,2,5,4,6,8]
+    for (i=0;i<mynumber.length;i++)
+        if (mynumber[i-1] %2 ===0 && mynumber[i] % 2 ===0)
+        {result.push('-',i)}
+        else {result.push(i)
+        }
+        document.write(result)
+        </script>
+        </body>
+</html>
